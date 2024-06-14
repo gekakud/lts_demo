@@ -8,7 +8,7 @@ const map = new mapboxgl.Map({
 
 var client_id = Date.now()
 document.querySelector("#ws-id").textContent = client_id;
-var ws = new WebSocket(`ws://localhost:8000/ws/${client_id}`);
+var ws = new WebSocket(`wss://lts-demo.onrender.com/ws/${client_id}`);
 
 // Initialize marker at default position
 var self_location_marker = new mapboxgl.Marker();
