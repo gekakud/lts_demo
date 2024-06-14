@@ -1,4 +1,4 @@
-var ws = new WebSocket("ws://localhost:8000/ws/dashboard");
+var ws = new WebSocket("wss://lts-demo.onrender.com/ws/dashboard");
 
 ws.onmessage = function(event) {
     var clients = JSON.parse(event.data);
